@@ -35,6 +35,10 @@ LOCAL_SHARED_LIBRARIES := \
     libmedia \
     liblog
 
+LOCAL_CFLAGS += -Wno-error=unused-but-set-variable \
+	-Wno-error=unused-parameter \
+	-Wno-error=unused-function
+
 LOCAL_MODULE := libmtkfmjni
 LOCAL_MODULE_TAGS := optional
 
